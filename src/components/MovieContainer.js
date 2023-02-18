@@ -5,12 +5,11 @@ export default function MovieContainer({ movies }) {
   const style = {
     movieContainer: {
       display: "flex",
-      maxWidth: 1084,
       flexWrap: "wrap",
-      justifyContent: "space-evenly",
+      justifyContent: "start",
       background: "black",
-      paddingTop: 36,
-      rowGap: 90,
+      gap: "90px 30px",
+      padding: "36px 30px 0",
     },
   };
 

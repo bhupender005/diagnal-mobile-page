@@ -1,8 +1,8 @@
 import React from "react";
 import missingPoster from "../assets/images/placeholder_for_missing_posters.png";
 
-function Movie({ movie = {} }) {
-  const movieName = "Movie Name";
+function Movie({ movie: { "poster-image": imagePath, name: movieName } }) {
+  // const movieName = "Movie Name";
 
   const style = {
     movieTitle: {
@@ -12,9 +12,17 @@ function Movie({ movie = {} }) {
     },
   };
 
+  let image = missingPoster;
+
+  try {
+    image = require(`../assets/images/${imagePath}`);
+  } catch (e) {
+    console.warn(e);
+  }
+
   return (
     <div>
-      <img src={missingPoster} alt={movieName} />
+      <img src={image} alt={movieName} width="182" height="272" />
       <div style={style.movieTitle}>{movieName}</div>
     </div>
   );
