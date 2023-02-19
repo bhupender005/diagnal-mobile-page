@@ -1,7 +1,7 @@
 import React from "react";
 import Movie from "./Movie";
-
-export default function MovieContainer({ movies }) {
+import PropTypes from "prop-types";
+function MovieContainer({ movies }) {
   const style = {
     movieContainer: {
       display: "flex",
@@ -9,15 +9,21 @@ export default function MovieContainer({ movies }) {
       justifyContent: "start",
       background: "black",
       gap: "90px 30px",
-      padding: "36px 30px 0",
+      padding: "96px 30px 0",
     },
   };
 
   return (
     <div style={style.movieContainer}>
       {movies.map((movie, i) => (
-        <Movie key={i} movie={movie} />
+        <Movie key={i} movie={movie} index={i} />
       ))}
     </div>
   );
 }
+
+MovieContainer.propTypes = {
+  movies: PropTypes.array,
+};
+
+export default MovieContainer;

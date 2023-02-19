@@ -4,7 +4,8 @@ const getResponse = (page) => {
 };
 
 const fetchMovieList = (page = 1) =>
-  new Promise((resolve, reject) => {
+  new Promise((resolve) => {
+    console.log(`fetch list of movies for page ${page}`);
     // dummy api time
     const responseTime = 100 * Math.floor(Math.random() * 10) + 100; // 100 - 1000 secs
     setTimeout(() => {
