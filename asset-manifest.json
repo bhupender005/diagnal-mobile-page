@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/diagnal-mobile-page/static/css/main.d05be2ef.css",
-    "main.js": "/diagnal-mobile-page/static/js/main.2ff71196.js",
+    "main.css": "/diagnal-mobile-page/static/css/main.fee143c6.css",
+    "main.js": "/diagnal-mobile-page/static/js/main.2846ba1e.js",
     "static/js/787.517e3ba9.chunk.js": "/diagnal-mobile-page/static/js/787.517e3ba9.chunk.js",
     "static/media/poster2.jpg": "/diagnal-mobile-page/static/media/poster2.bf23bfae49d854fec0f2.jpg",
     "static/media/poster1.jpg": "/diagnal-mobile-page/static/media/poster1.d966e333249e4f74e821.jpg",
@@ -13,12 +13,12 @@
     "static/media/poster4.jpg": "/diagnal-mobile-page/static/media/poster4.a2f1de9b0f0c656226d7.jpg",
     "static/media/poster7.jpg": "/diagnal-mobile-page/static/media/poster7.8f23c2d5749c68467aaf.jpg",
     "index.html": "/diagnal-mobile-page/index.html",
-    "main.d05be2ef.css.map": "/diagnal-mobile-page/static/css/main.d05be2ef.css.map",
-    "main.2ff71196.js.map": "/diagnal-mobile-page/static/js/main.2ff71196.js.map",
+    "main.fee143c6.css.map": "/diagnal-mobile-page/static/css/main.fee143c6.css.map",
+    "main.2846ba1e.js.map": "/diagnal-mobile-page/static/js/main.2846ba1e.js.map",
     "787.517e3ba9.chunk.js.map": "/diagnal-mobile-page/static/js/787.517e3ba9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d05be2ef.css",
-    "static/js/main.2ff71196.js"
+    "static/css/main.fee143c6.css",
+    "static/js/main.2846ba1e.js"
   ]
 }
