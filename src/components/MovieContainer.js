@@ -6,7 +6,7 @@ function MovieContainer({ movies }) {
     movieContainer: {
       display: "flex",
       flexWrap: "wrap",
-      justifyContent: "start",
+      justifyContent: "space-evenly",
       background: "black",
       gap: "90px 30px",
       padding: "96px 30px 0",

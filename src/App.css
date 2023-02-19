@@ -1,6 +1,12 @@
+#root {
+  background: rgba(0, 0, 0, 0.95);
+}
+
 .App {
   text-align: center;
   max-width: 666px;
+  width: 100%;
+  margin: auto;
   background-color: #000000;
   color: #ffffff;
 }
