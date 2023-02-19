@@ -17,12 +17,18 @@ function NavBar({ title, search }) {
       top: 0,
       width: 606,
       height: 60,
+      maxWidth: "calc(100% - 60px)",
     },
     navTitle: {
-      fontSize: 28,
-      paddingLeft: 20,
-      position: "relative",
-      top: "-4px",
+      show: {
+        fontSize: 28,
+        paddingLeft: 20,
+        position: "relative",
+        top: "-4px",
+      },
+      hide: {
+        display: "none",
+      },
     },
     searchBox: {
       hide: {
@@ -30,9 +36,11 @@ function NavBar({ title, search }) {
       },
       show: {
         display: "inline",
-        marginRight: 10,
+        marginLeft: 20,
         position: "relative",
         top: "-8px",
+        padding: 8,
+        border: "4px double #000000",
       },
     },
   };
@@ -51,16 +59,24 @@ function NavBar({ title, search }) {
       }}
     >
       <div>
-        <img src={backArrow} alt="Navigate Back" width="30" />
-        <span style={style.navTitle}>{title}</span>
-      </div>
-      <div>
+        <img
+          src={backArrow}
+          alt="Navigate Back"
+          width="30"
+          onClick={() => setMovieToSearch("")}
+        />
+        <span style={show ? style.navTitle.hide : style.navTitle.show}>
+          {title}
+        </span>
         <input
           type="text"
           value={movieToSearch}
           onChange={(e) => setMovieToSearch(e.target.value)}
           style={show ? style.searchBox.show : style.searchBox.hide}
+          placeholder="Type movie name to search"
         />
+      </div>
+      <div>
         <img
           src={searchIcon}
           alt="Search"
